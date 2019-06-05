@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1>Submit a Reimbursement Request</h1>
+    <table>
+        <tr>
+            <th>Event</th>
+            <th>Date (YYYY-MM-DD)</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Cost</th>
+            <th>Reasoning</th>
+            <!-- formid number(20) primary key,
+            id_emp number(20),
+            id_event number(20),
+            datetime varchar2(50),
+            location varchar2(20) not null,
+            description varchar2(256),
+            cost number(10,2) not null,
+            justification varchar(2256) not null,
+            status varchar2(20) default 'Pending' not null,
+            hierarchy number(1) not null, -->
+        </tr>
+        <tr>
+            <td>
+                <!-- <div class="container">
+                    <div class="form-group">
+                        <select class="form-control" id="eventdd">
+                            <option>University Course</option>
+                            <option>Seminar</option>
+                            <option>Certification Prep Class</option>
+                            <option>Certification</option>
+                            <option>Technical Training</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div> -->
+                <div>
+                    <input class="form-control" type="text" id="f_eventType" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" type="text" id="f_date" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" type="text" id="f_location" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" type="text" id="f_description" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" type="text" id="f_cost" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input class="form-control" type="text" id="f_reasoning" />
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-primary emp-btn" id="submitbtn">Submit</button>
+    <button type="submit" class="btn btn-danger" id="backbtn">Cancel</button>
+    <script src="js/login.js"></script>
+    <script src="js/submissions.js"></script>
+</body>
+
+</html>
+<!-- <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul> -->
+
+<!-- <a class="dropdown-item" href="#">University Course</a>
+    <a class="dropdown-item" href="#">Seminar</a>
+    <a class="dropdown-item" href="#">Certification Prep Class</a>
+    <a class="dropdown-item" href="#">Certification</a>
+    <a class="dropdown-item" href="#">Technical Training</a>
+    <a class="dropdown-item" href="#">Other</a> -->

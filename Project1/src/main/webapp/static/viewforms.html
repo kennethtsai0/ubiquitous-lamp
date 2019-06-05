@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1>Reimbursement Requests</h1>
+    <table id="forms" class="table">
+        <tr>
+            <th>ID</th>
+            <th>Employee ID</th>
+            <th>Event ID</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Cost</th>
+            <th>Reasoning</th>
+            <th>Grade</th>
+            <th>Status</th>
+            <th>Hierarchy</th>
+            <!-- formid number(20) primary key,
+            id_emp number(20),
+            id_event number(20),
+            datetime varchar2(50),
+            location varchar2(20) not null,
+            description varchar2(256),
+            cost number(10,2) not null,
+            justification varchar(2256) not null,
+            status varchar2(20) default 'Pending' not null,
+            hierarchy number(1) not null, -->
+        </tr>
+        
+    </table>
+    <button type="submit" class="btn btn-primary emp-btn" id="submitbtn" disabled>Submit</button>
+    <button type="submit" class="btn btn-danger" id="backbtn">Cancel</button>
+    <script src="js/login.js"></script>
+    <script src="js/viewforms.js"></script>
+</body>
+
+</html>

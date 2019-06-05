@@ -1,1 +1,0 @@
-# ubiquitous-lamp
